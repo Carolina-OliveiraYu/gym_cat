@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">myFistApp</string>
+    <string name="entrar">Entrar</string>
+    <string name="senha">Digite sua Senha</string>
+    <string name="senha_confirma">Confirme sua Senha</string>
+    <string name="Digite_o_seu_email">Digite o seu email</string>
+</resources>

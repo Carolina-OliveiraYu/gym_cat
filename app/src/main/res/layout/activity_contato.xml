@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".ContatoActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="453dp"
+        android:layout_height="779dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grad" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="209dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="68dp"
+        android:text="CÁLCULO IMC"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:drawable/divider_horizontal_textfield"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Digite seu peso Ex: 85.0"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <EditText
+        android:id="@+id/editTextAltura"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/divider_horizontal_textfield"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Digite sua altura Ex: 1.70"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#F87AB3"
+        android:onClick="calcularImc"
+        android:text="CALCULAR "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#6F0707" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="262dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="60dp"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAltura"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
